@@ -1,0 +1,81 @@
+---
+title: Hydrodactyl Documentation
+description: The Pterodactyl-based game server panel that's faster, smaller, safer, and more accessible
+---
+
+![Banner with Hydrodactyl Logo](/banner_v6.jpg)
+
+# Welcome to Hydrodactyl
+
+<Callout type="warn">
+  Hydrodactyl is under development and pre-release. Some UI elements may appear
+  broken, and there might be some bugs.
+</Callout>
+
+<Callout type="info">
+  For Hydrodactyl-specific issues, join our Discord community at
+  [https://discord.gg/mnTJVSSaKp](https://https://discord.gg/mnTJVSSaKp) for support.
+</Callout>
+
+Hydrodactyl is the Pterodactyl-based game server management panel that focuses on performance enhancements, a reimagined, accessible interface, and top-tier developer experience. Builds faster, compiles smaller: Hydrodactyl is the world's best Pterodactyl.
+
+![Dashboard Image](/hero.png)
+
+## Changes from vanilla Pterodactyl
+
+- **Smaller bundle sizes**: Hydrodactyl is built using Vite, and significant design changes mean Hydrodactyl's initial download size is over 170 times smaller than leading Pterodactyl forks, including Pelican.
+- **Faster build times**: Hydrodactyl completes builds in milliseconds with the power of Turbo. Cold builds with zero cache finish in under 7 seconds.
+- **Faster loading times**: Hydrodactyl's load times are, on average, over 16 times faster than other closed-source Pterodactyl forks and Pelican. Smarter code splitting and chunking means that pages you visit in the panel only load necessary resources on demand. Better caching means that everything is simply snappy.
+- **More secure**: Hydrodactyl's modern architecture means most severe and easily exploitable CVEs simply do not exist. We have also implemented SRI and integrity checks for production builds.
+- **More accessible**: Pyro believes that gaming should be easily available for everyone. Hydrodactyl builds with the latest Web accessibility guidelines in mind. Hydrodactyl is entirely keyboard-navigable, even context menus, and screen-readers are easily compatible.
+- **More approachable**: Hydrodactyl's friendly, approachable interface means that anyone can confidently run a game server with Pyro.
+
+![Dashboard Image](/fs.png)
+
+<Cards>
+  <Card title="Installation Guide" href="/docs/hydrodactyl/installation/fresh-installation">
+    Set up Hydrodactyl using Docker installation
+  </Card>
+  <Card
+    title="Installation Guides"
+    href="/docs/hydrodactyl/installation/community-install-guides"
+  >
+    Community guides for different platforms
+  </Card>
+  <Card
+    title="Configuration"
+    href="/docs/hydrodactyl/installation/fresh-installation#panel-configuration"
+  >
+    Learn how to configure your Hydrodactyl instance
+  </Card>
+  <Card
+    title="Wings Setup"
+    href="/docs/hydrodactyl/installation/fresh-installation#wings-installation"
+  >
+    Configure Wings as your game server backend
+  </Card>
+  <Card title="Local Development" href="/docs/hydrodactyl/local-development">
+    Learn how to develop Hydrodactyl locally on your computer
+  </Card>
+</Cards>
+
+## Quick Start
+
+For existing Pterodactyl Docker users, you can quickly switch to Hydrodactyl by updating your panel image:
+
+```diff
+-image: ghcr.io/pterodactyl/panel:latest
++image: ghcr.io/blueprintframework/hydrodactyl:latest
+```
+
+<Callout type="warn">
+  Windows is currently only supported for development purposes.
+</Callout>
+
+## License
+
+Pterodactyl® Copyright 2015 - 2022 Dane Everitt and contributors.
+
+Hydrodactyl™ Copyright 2025 Pyro Inc. and contributors.
+
+AGPL-3.0-or-later

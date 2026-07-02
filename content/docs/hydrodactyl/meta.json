@@ -1,0 +1,8 @@
+{
+  "title": "Hydrodactyl",
+  "description": "Hydrodactyl docs",
+  "icon": "hydrodactyl",
+  "pages": ["index", "changelog", "..."],
+  "root": true,
+  "defaultOpen": true
+}

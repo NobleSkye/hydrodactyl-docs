@@ -1,8 +1,0 @@
-{
-  "title": "Pyrodactyl",
-  "description": "Pyrodactyl docs",
-  "icon": "pyrodactyl",
-  "pages": ["index", "changelog", "..."],
-  "root": true,
-  "defaultOpen": true
-}

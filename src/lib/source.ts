@@ -2,7 +2,7 @@ import { docs } from '@/.source';
 import { loader } from 'fumadocs-core/source';
 import { createElement } from 'react';
 import { icons } from 'lucide-react';
-import PyrodactylLogo from '@/components/ui/PyrodactylLogo';
+import HydrodactylLogo from '@/components/ui/HydrodactylLogo';
 import BlueprintLogo from '@/components/ui/BlueprintLogo';
 import ElytraLogo from '@/components/ui/ElytraLogo';
 
@@ -16,8 +16,8 @@ export const source = loader({
       return
     }
     switch (icon) {
-      case 'pyrodactyl':
-        return PyrodactylLogo();
+      case 'hydrodactyl':
+        return HydrodactylLogo();
       case 'blueprint':
         return BlueprintLogo();
       case 'elytra':

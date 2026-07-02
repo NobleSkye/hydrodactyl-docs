@@ -8,7 +8,7 @@ export function GitHubStats() {
 
   useEffect(() => {
     Promise.all([
-      fetch('https://api.eva.pink/api/stars/pyrodactyl-oss/pyrodactyl').then(r => r.json()),
+      fetch('https://api.eva.pink/api/stars/blueprintframework/hydrodactyl').then(r => r.json()),
     ])
       .then(([repo1]) => {
         setStars((repo1.stars || 0));

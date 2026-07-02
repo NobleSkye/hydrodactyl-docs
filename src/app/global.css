@@ -6,9 +6,9 @@
 
 /* Custom theme colors */
 @theme {
-  --color-brand: #f94943;
-  --color-brand-light: #ff6b5a;
-  --color-brand-dark: #d93d38;
+  --color-brand: #52a9ff;
+  --color-brand-light: #7cc0ff;
+  --color-brand-dark: #2d8fe0;
 }
 
 /* Force dark mode and override fumadocs theme */
@@ -25,21 +25,21 @@
   --fd-card: #18181b;
   --fd-card-foreground: #fafafa;
   --fd-border: rgba(255, 255, 255, 0.1);
-  --fd-primary: #f94943;
+  --fd-primary: #52a9ff;
   --fd-primary-foreground: #ffffff;
   --fd-secondary: #27272a;
   --fd-secondary-foreground: #fafafa;
-  --fd-accent: rgba(249, 73, 67, 0.1);
-  --fd-accent-foreground: #f94943;
-  --fd-ring: #f94943;
+  --fd-accent: rgba(82, 169, 255, 0.1);
+  --fd-accent-foreground: #52a9ff;
+  --fd-ring: #52a9ff;
   
   /* Sidebar specific */
   --fd-sidebar-background: #09090b;
   --fd-sidebar-foreground: #a1a1aa;
   --fd-sidebar-border: rgba(255, 255, 255, 0.08);
-  --fd-sidebar-accent: rgba(249, 73, 67, 0.1);
-  --fd-sidebar-accent-foreground: #f94943;
-  --fd-sidebar-primary: #f94943;
+  --fd-sidebar-accent: rgba(82, 169, 255, 0.1);
+  --fd-sidebar-accent-foreground: #52a9ff;
+  --fd-sidebar-primary: #52a9ff;
   --fd-sidebar-primary-foreground: #ffffff;
 }
 
@@ -50,7 +50,7 @@ html {
 
 /* Selection styling */
 ::selection {
-  background-color: rgba(249, 73, 67, 0.3);
+  background-color: rgba(82, 169, 255, 0.3);
   color: white;
 }
 
@@ -84,22 +84,22 @@ p {
 
 /* Override fumadocs link colors */
 .prose a {
-  color: #f94943;
-  text-decoration-color: #f94943;
+  color: #52a9ff;
+  text-decoration-color: #52a9ff;
 }
 
 .prose a:hover {
-  color: #ff6b5a;
-  text-decoration-color: #ff6b5a;
+  color: #7cc0ff;
+  text-decoration-color: #7cc0ff;
 }
 
 /* General link styling in docs */
 a[href]:not(.no-underline) {
-  text-decoration-color: rgba(249, 73, 67, 0.4);
+  text-decoration-color: rgba(82, 169, 255, 0.4);
 }
 
 a[href]:not(.no-underline):hover {
-  text-decoration-color: #f94943;
+  text-decoration-color: #52a9ff;
 }
 
 /* Sidebar styling */
@@ -122,8 +122,8 @@ aside a:hover {
 [data-active="true"],
 aside [data-active="true"],
 aside a[data-active="true"] {
-  color: #f94943 !important;
-  background-color: rgba(249, 73, 67, 0.1) !important;
+  color: #52a9ff !important;
+  background-color: rgba(82, 169, 255, 0.1) !important;
 }
 
 /* Sidebar folder/category buttons */
@@ -138,8 +138,8 @@ aside button:hover {
 
 /* TOC active state */
 .fd-toc [data-active="true"] {
-  color: #f94943 !important;
-  border-color: #f94943 !important;
+  color: #52a9ff !important;
+  border-color: #52a9ff !important;
 }
 
 /* TOC links */
@@ -262,13 +262,13 @@ div:has(> button[aria-label="light"]):has(> button[aria-label="dark"]):has(> but
 [data-search-dialog] [data-item][data-selected],
 .fd-search-item:hover,
 .fd-search-item[data-selected] {
-  background-color: rgba(249, 73, 67, 0.1) !important;
+  background-color: rgba(82, 169, 255, 0.1) !important;
   color: #fafafa !important;
 }
 
 [data-search-dialog] [data-item][data-selected],
 .fd-search-item[data-selected] {
-  border-left: 2px solid #f94943 !important;
+  border-left: 2px solid #52a9ff !important;
 }
 
 /* Search result title */
