@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "Accessibility at the core",
-    description: "Pyro & Hydrodactyl are committed to making our software accessible to everyone. Hydrodactyl is no exception.",
+    description: "Hydrodactyl is committed to making our software accessible to everyone. Hydrodactyl is no exception.",
     icon: <UserGroupIcon className="w-5 h-5" />
   },
   {
@@ -53,11 +53,11 @@ const features = [
     ),
     icon: <CubeIcon className="w-5 h-5" />
   },
-  {
-    title: "Open source",
-    description: "Hydrodactyl is the first (and only) panel that a company has made its source publicly available.",
-    icon: <CodeBracketIcon className="w-5 h-5" />
-  },
+ // {
+   // title: "Open source",
+   // description: "Hydrodactyl is the first (and only) panel that a company has made its source publicly available.",
+   // icon: <CodeBracketIcon className="w-5 h-5" />
+//  },
 ];
 
 const buildTimes = [
