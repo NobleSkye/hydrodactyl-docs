@@ -1,57 +1,39 @@
 ---
-title: Development using Vagrant
-description: Setup a local development environment using Vagrant
+title: Development using Lerd
+description: Setup a local development environment using Lerd
 ---
+
+
+<Callout type="warn">
+  The dev env currently is not 100% automated, some manual setup is required for the wings daemon
+</Callout>
+<Callout type="info">
+  These docs are not finished yet, if you find something to fix or improve, make a pr!
+</Callout>
+
+
 
 ## Prerequisites
 
-- Latest version of NodeJS LTS
-- [Vagrant](https://developer.hashicorp.com/vagrant/install) & a [Vagrant provider](https://developer.hashicorp.com/vagrant/docs/providers)
-  - On Linux, `libvirtd` is supported. Otherwise, VirtualBox or VMWare is recommended
-  - Make sure you also install your provider's Vagrant plugin (i.e. for [`libvirtd`](https://vagrant-libvirt.github.io/vagrant-libvirt/#installation) & [VMWare](https://developer.hashicorp.com/vagrant/docs/providers/vmware/installation))
-- pnpm (`npm install -g pnpm@latest`)
-- Git
-
-### Linux-only
-
-You might need `nfs-utils`. Install your distro's package, then start the `nfs-server` service. See the [Vagrant docs](https://developer.hashicorp.com/vagrant/docs/synced-folders/nfs) for more information.
+- [lerd](https://lerd.sh/)
+- [pnpm](https://pnpm.io/)
 
 ## Initial setup
 
-1. Clone the Hydrodactyl panel repository
+1. Clone the Hydrodactyl panel repository  
+   `git clone https://github.com/BlueprintFramework/hydrodactyl.git`
 
-2. Install dependencies:
+1. Cd into the Hydrodactyl directory  
+   `cd Hydrodactyl`
 
-   ```bash
-   pnpm i
-   ```
+1. Run the dev env  
+   `pnpm dev:setup`
 
-3. Build the project:
-
-   ```bash
-   pnpm run ship
-   ```
-
-   - Caches build results
-   - Uploads sourcemaps to Sentry
-   - Makes subsequent builds without code changes nearly instant
-
-4. Initialize the environment: `vagrant up`
-
-   - Sets up Wings (backend) and required services
-   - Configures databases and applications
-   - Takes approximately 15 minutes
-
-5. Access Hydrodactyl at `localhost:3000` and login with the console-provided credentials
-   <Callout type="warn">
-     Always use `localhost`, not `127.0.0.1`, to avoid CORS issues!
-   </Callout>
+1. Access Hydrodactyl at your new url  
+   [`http://hydrodactyl.test`](http://hydrodactyl.test)
 
 ## General usage
 
-<Callout type="info">
-  You must run Vagrant commands inside the repo folder.
-</Callout>
 
 Once you've completed the initial setup:
 
